@@ -3,26 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Management Tool</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Task Management System</title>
 </head>
 <body>
+    <!-- Header section -->
     <header>
-        <h1>Project Management Tool</h1>
+        <h1>Task Management System</h1>
     </header>
+    
+    <!-- Main content section -->
     <main>
-        <section id="users-section">
-            <h2>Users</h2>
-            <!-- User list goes here -->
-        </section>
-        <section id="tasks-section">
-            <h2>Tasks</h2>
-            <!-- Task list goes here -->
-        </section>
+        <!-- User selection dropdown -->
+        <div class="user-select">
+            <label for="user-dropdown">Select User:</label>
+            <select id="user-dropdown">
+                <option value="User1">User 1</option>
+                <option value="User2">User 2</option>
+                <option value="User3">User 3</option>
+                <option value="User4">User 4</option>
+                <option value="User4">User 4</option>
+
+                <!-- Add more users here -->
+            </select>
+        </div>
+
+        <!-- Task input form -->
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="Add a task">
+            <input type="file" id="file-input">
+            <button id="add-task">Add Task</button>
+        </div>
+        
+        <!-- Task list container -->
+        <div class="task-list">
+            <ul id="task-list">
+                <!-- Task items will be dynamically added here -->
+            </ul>
+        </div>
     </main>
-    <footer>
-        <!-- Task creation form goes here -->
-    </footer>
+
+    <div class="self-info">
+        <p>&copy SHAH HUSSAIN AHAMED S A</p>
+        <a href="https://linkedin.com/in/shahhussain22"title="Click to Visit Linkedin Profile"><i class="fab fa-linkedin" style="font-size:26px; color: black;"></i></a>
+        <a href="https://github.com/SHAHHUSSAINSA"title="Click to Visit GitHub Profile"><i class="fab fa-github" style="font-size:26px; margin-left: 5px; color: black;"></i></a>
+        <a href="https://shahhussainsa.github.io/"title="Click to Visit Portfolio"><i class="fas fa-briefcase" style="font-size:26px; margin-left: 5px; color: black;"></i></a>
+         <a href="image/HussainResumes.pdf"title="Click to Visit Resume"><i class="fas fa-file-pdf" style="font-size:26px; margin-left: 5px; color: black;"></i></a>
+
+        </div>
+    
+    <!-- JavaScript script -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,16 +1,12 @@
 /* Reset some default styles */
-body, h1, h2, ul, li, p {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
-/* Set a background color and font family */
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-}
-
-/* Header styles */
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
@@ -18,76 +14,99 @@ header {
     padding: 20px 0;
 }
 
-/* Main content styles */
+/* Main content styling */
 main {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
 
-/* Section styles */
-section {
+/* Task input form styling */
+.task-form {
+    display: flex;
     margin-bottom: 20px;
 }
 
-/* Heading styles */
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* User list styles */
-#users-section {
-    border: 1px solid #ccc;
+.task-form input[type="text"] {
+    flex: 1;
     padding: 10px;
-}
-
-/* Task list styles */
-#tasks-section {
     border: 1px solid #ccc;
-    padding: 10px;
 }
 
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Form styles (customize as needed) */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
+.task-form button {
     padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
 }
 
-/* Button hover effect */
-button:hover {
-    background-color: #555;
+/* Task list styling */
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+.user-select{
+    margin: 5px;
+    padding-inline: 5px;
+    font-weight: bold;
+}
+
+.task-form input{
+    margin: 10px;
+}
+#add-task{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#file-input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+#task-input{
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.task-list li button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.task-list li button:hover {
+    background-color: #d9534f;
+}
+.self-info{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 40%;
+}
+
+
+.self-info a{
+    padding-top: 10px;
+    padding-left: 20px;
 }
