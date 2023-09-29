@@ -76,7 +76,6 @@ main {
 
 }
 
-
 .task-list li {
     display: flex;
     justify-content: space-between;
@@ -104,9 +103,9 @@ main {
     padding-top: 30px;
     padding-left: 40%;
 }
-
-
 .self-info a{
-    padding-top: 10px;
+    align-items: center;
+    padding-inline: 10px;
     padding-left: 20px;
 }
+
